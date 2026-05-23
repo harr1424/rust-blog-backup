@@ -17,7 +17,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 
 async fn periodic_get_recent_posts() {
-    info!{"Checking for recent piosts..."};
+    info! {"Checking for recent piosts..."};
     loop {
         let result = spawn_blocking(|| scrapers::get_recent_posts()).await;
 
@@ -29,3 +29,5 @@ async fn periodic_get_recent_posts() {
         sleep(Duration::from_secs(60 * 60)).await;
     }
 }
+
+// this does nothing, test new commit signing key only
