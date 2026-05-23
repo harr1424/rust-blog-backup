@@ -29,4 +29,3 @@ async fn periodic_get_recent_posts() {
         sleep(Duration::from_secs(60 * 60)).await;
     }
 }
-// test commit sign
